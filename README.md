@@ -1,5 +1,9 @@
 # VueTs
 
+
+![new1](https://user-images.githubusercontent.com/38229144/72492011-2aecd980-37f2-11ea-8ee0-77acbe1cd725.gif)
+
+
 ## Project setup
 ```
 npm install
