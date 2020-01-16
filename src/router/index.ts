@@ -1,13 +1,17 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import { home, login } from "./routes.json";
+import NavDrawer from "@/components/shared/nav-drawer/index.vue";
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: home.path,
     name: home.name,
-    component: () => import("../views/Home.vue")
+    components: {
+      default: () => import("../views/homeview/index.vue"),
+      drawer: NavDrawer
+    }
   },
   {
     path: login.path,

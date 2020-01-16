@@ -1,9 +1,10 @@
 import Vue from "vue";
 import { Login } from "@/models/viewModels/login";
+import { home } from "../../router/routes.json";
 export default Vue.extend({
   data: () => ({
     valid: true,
-    login: { userName: "", password: "" } as Login,
+    login: { userName: "admin@admin.com", password: "admin" } as Login,
     passwordRules: [(v: any) => !!v || "is required"],
     userNameRules: [
       (v: any) => !!v || "userName is required",
@@ -16,6 +17,7 @@ export default Vue.extend({
     validate() {
       if ((this.$refs.form as Vue & { validate: () => Boolean }).validate()) {
         this.snackbar = true;
+        this.$router.push(home.path);
       }
     }
   }

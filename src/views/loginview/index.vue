@@ -4,10 +4,8 @@
       <v-row no-gutters justify="center">
         <v-col :cols="4">
           <v-row justify="center">
-            <v-col cols="12">
-              <v-icon style="font-size:300px" large color="green darken-2"
-                >logo</v-icon
-              >
+            <v-col xs="12" sm="12" lg="12" xl="8">
+              <v-img src="../../../public/svg/login.svg" wid></v-img>
             </v-col>
             <v-col cols="12">
               <v-form ref="form" v-model="valid" lazy-validation>
@@ -22,6 +20,7 @@
                   v-model="login.password"
                   :rules="passwordRules"
                   label="Password"
+                  type="password"
                   required
                 ></v-text-field>
                 <v-btn
