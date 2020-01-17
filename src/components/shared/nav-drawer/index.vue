@@ -8,8 +8,8 @@
           </v-list-item-avatar>
 
           <v-list-item-content>
-            <v-list-item-title>Application</v-list-item-title>
-            <v-list-item-subtitle>Subtext</v-list-item-subtitle>
+            <v-list-item-title>Jhon Doe</v-list-item-title>
+            <v-list-item-subtitle>Admin 🐱‍🏍</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
 
@@ -21,14 +21,16 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <router-link :to="item.path" tag="div">
+              <v-list-item-title> {{ item.title }}</v-list-item-title>
+            </router-link>
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar app color="#6c63ff" dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>VueTS - DASHBOARD</v-toolbar-title>
     </v-app-bar>
   </div>
 </template>

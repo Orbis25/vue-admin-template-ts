@@ -17,7 +17,7 @@ export default Vue.extend({
     validate() {
       if ((this.$refs.form as Vue & { validate: () => Boolean }).validate()) {
         this.snackbar = true;
-        this.$router.push(home.path);
+        this.$router.push(home.path) as any;
       }
     }
   }

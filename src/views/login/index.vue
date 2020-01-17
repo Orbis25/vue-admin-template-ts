@@ -11,7 +11,6 @@
               <v-form ref="form" v-model="valid" lazy-validation>
                 <v-text-field
                   v-model="login.userName"
-                  :counter="10"
                   :rules="userNameRules"
                   label="UserName"
                   required

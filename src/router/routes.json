@@ -3,8 +3,16 @@
         "path": "/",
         "name": "home"
     },
-    "login":{
+    "login": {
         "path": "/login",
         "name": "login"
+    },
+    "clients": {
+        "path": "/clients",
+        "name": "clients"
+    },
+    "forms": {
+        "path": "/forms",
+        "name": "forms"
     }
 }
