@@ -8,8 +8,7 @@ export default Vue.extend({
       { title: "Clients", icon: "fas fa-users", path: clients.path },
       { title: "Forms", icon: "fab fa-wpforms", path: forms.path },
       { title: "Login", icon: "fas fa-lock", path: login.path },
-      { title: "Axios example", icon: "fas fa-database", path: "/axios" },
-      { title: "About", icon: "fas fa-question", path: "/about" }
+      { title: "Axios example", icon: "fas fa-database", path: "/axios" }
     ],
     color: "primary",
     colors: ["primary", "blue", "success", "red", "teal"],
