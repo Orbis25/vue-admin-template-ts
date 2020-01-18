@@ -1,8 +1,6 @@
 # VueTs
 
-
-![new1](https://user-images.githubusercontent.com/38229144/72492011-2aecd980-37f2-11ea-8ee0-77acbe1cd725.gif)
-
+![new1](https://user-images.githubusercontent.com/38229144/72582600-9cdc2600-38b9-11ea-8ee4-b76f71cd9d33.gif)
 
 ## Project setup
 ```
